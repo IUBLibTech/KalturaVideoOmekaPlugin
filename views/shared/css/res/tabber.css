@@ -1,0 +1,297 @@
+.tabberlive .tabbertabhide {
+    display:none;
+}
+.tabber {
+}
+.tabberlive {
+    margin-top : 1em;
+}
+ul.tabbernav {
+    margin:0;
+    padding: 3px 0;
+}
+ul.tabbernav li {
+    list-style: none;
+    margin: 0;
+    display: inline;
+}
+ul.tabbernav li a {
+    padding: 4px 0.5em;
+    margin-left: 3px;
+    border: 1px solid #778;
+    border-bottom: none;
+    text-decoration: none;
+    background: url('../images/displaysegment_toptab_bg.png') repeat-x;
+    height: 23px;
+    color: white;
+}
+ul.tabbernav li a:visited {
+    color: white;
+}
+ul.tabbernav li a:hover {
+    text-decoration: underline;
+}
+ul.tabbernav li.tabberactive a {
+    background: url('../images/displaysegment_toptab_currentbg.png') repeat-x;
+    height: 23px;
+}
+ul.tabbernav li.tabberactive a:hover {
+    text-decoration : underline;
+}
+.tabberlive .tabbertab {
+    border-top:1px solid grey;
+    background: url('../images/displaysegment_toptab_contentbg.png') repeat-x top;
+}
+/* Now Playing Sub Level Tabs */
+/* Commons */
+div.positionNowPlayingTabs {
+    margin-left: 5%;
+}
+div.nowPlayingTab {
+    height: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 7px;
+    float: left;
+    width: 15%;
+    margin-right: 5%;
+    font-size: 85%;
+}
+img.pointer {
+    float:left;
+    position: relative;
+    top: 10px;
+    margin: 0px 20%;
+}
+span.nowPlayingTabText {
+    position: relative;
+    top: 5px;
+}
+/* Collection Tab */
+#nowPlayingTab1 {
+    height: 23px;
+    background: url('../images/displaysegment_nowplaying_collectiontab_bg.png') repeat-x;
+    color: black;
+    display: block;
+}
+#nowPlayingTabPointer1 {
+    height: 17px;
+    background: url('../images/displaysegment_nowplaying_collectiontab_pointer.png') no-repeat 50% 0%;
+    display: block;
+    visibility: hidden;
+}
+/* Event Tab */
+#nowPlayingTab2 {
+    height: 23px;
+    background: url('../images/displaysegment_nowplaying_eventtab_bg.png') repeat-x;
+    color: black;
+    display: block;
+}
+#nowPlayingTabPointer2 {
+    height: 17px;
+    background: url('../images/displaysegment_nowplaying_eventtab_pointer.png') no-repeat 50% 0%;
+    display: block;
+    visibility: hidden;
+}
+/* Scene Tab */
+#nowPlayingTab3 {
+    height: 23px;
+    background: url('../images/displaysegment_nowplaying_scenetab_bg.png') repeat-x;
+    color: black;
+    display: block;
+}
+#nowPlayingTabPointer3 {
+    height: 17px;
+    background: url('../images/displaysegment_nowplaying_scenetab_pointer.png') no-repeat 50% 0%;
+    display: block;
+    visibility: hidden;
+}
+/* Action Tab */
+#nowPlayingTab4 {
+    height: 23px;
+    background: url('../images/displaysegment_nowplaying_actiontab_bg.png') repeat-x;
+    color: black;
+    display: block;
+}
+#nowPlayingTabPointer4 {
+    height: 17px;
+    background: url('../images/displaysegment_nowplaying_actiontab_pointer.png') no-repeat 50% 0%;
+    display: block;
+    visibility: hidden;
+}
+#nowPlayingTab5 {
+    height: 23px;
+    background: url('../images/displaysegment_nowplaying_scenetab_bg.png') repeat-x;
+    color: black;
+    display: block;
+}
+#nowPlayingTabPointer5 {
+    height: 17px;
+    background: url('../images/displaysegment_nowplaying_scenetab_pointer.png') no-repeat 50% 0%;
+    display: block;
+    visibility: hidden;
+}
+/* Segment Info Panel */
+#segmentInfo {
+    height:330px;
+}
+/* Tab Content */
+div.tabContent {
+    background-color: #eee;
+    padding: 0 2%;
+    position: relative;
+    top: 20px;
+    overflow: auto;
+    height: 100%;
+}
+div.tabContent h4 {
+    color: #014b4c;
+    background-color: #fafafa;
+    padding: 5px 3px;
+    padding-right: 0px;
+    border-bottom: 1px solid #a7a7a7;
+}
+/* Controlled Vocabulary & Participants Styles */
+div.floatingMetadata {
+    float: right;
+    background: url(../images/cv_topleft_bg.png) top left no-repeat;
+    width: 45%;
+    margin-top: 0;
+}
+div.floatingMetadata div.floatingMetadataHeaderBox {
+    background: url(../images/cv_topright_bg.png) top right no-repeat;
+    padding:15px;
+    margin:0;
+    color: #014b4c;
+    height: 15px;
+    white-space: nowrap;
+}
+div.floatingMetadata div.floatingMetadataBody {
+    background: url(../images/cv_borderright_bg.png) top right repeat-y;
+    margin:0;
+    margin-top: -5px;
+    padding:15px;
+}
+div.floatingMetadata div.floatingMetadataFooter {
+    background: url(../images/cv_bottomleft_bg.png) bottom left no-repeat;
+}
+div.floatingMetadata div.floatingMetadataFooter div {
+    background: url(../images/cv_bottomright_bg.png) bottom right no-repeat;
+}
+/* Floating Metatdata : Controlled Vocabulary */
+div.floatingMetadata h4.cvHeader {
+    margin-bottom: 2em;
+    margin-top: -40px;
+    white-space: wrap;
+    background: url('../images/collapse_icon.png') 2px 5px no-repeat white;
+    padding-left: 18px;
+}
+div.floatingMetadata div.floatingMetadataBody dl.cvContent {
+    margin-top: -10px;
+}
+div.floatingMetadata div.floatingMetadataBody dl.cvContent dt {
+    font-weight: bold;
+}
+div.floatingMetadata div.floatingMetadataBody dl.cvContent dd {
+    margin-left: 3%;
+}
+/* Floating Metadata : Participants */
+div.floatingMetadata h4.participantsHeader {
+    margin-bottom: 2em;
+    margin-top: 0px;
+    white-space: wrap;
+    background: url('../images/collapse_icon.png') 2px 5px no-repeat white;
+    padding-left: 18px;
+}
+div.floatingMetadata div.floatingMetadataBody dl.participantsContent {
+    margin-top: -10px;
+}
+div.floatingMetadata div.floatingMetadataBody dl.participantsContent dt {
+    font-weight: bold;
+}
+div.floatingMetadata div.floatingMetadataBody dl.participantsContent dd {
+    margin-left: 3%;
+}
+div.floatingMetadata div.floatingMetadataBody dl.participantsContent div.participantsRole {
+    margin-left: 10px;
+    font-size: 90%;
+}
+/* Collection Hierarchy Styles */
+span.resetHierarchy {
+    float:right;
+    padding: 4px 5px;
+    background-color: #a71818;
+    color: #fff;
+}
+#collectionHierarchy a {
+    text-decoration: none;
+    color: #00E;
+}
+#collectionHierarchy a.playingVideo {
+    font-weight: bold;
+    color: #fa7000;
+}
+#collectionHierarchy a:hover {
+    text-decoration: underline;
+}
+#collectionHierarchy span.playIcon {
+    background:url('../images/dialogbox_play_icon.png') 0 0 no-repeat;
+    width: 10px;
+    height: 10px;
+    padding: 0px 4px;
+}
+#collectionHierarchy span.descIcon {
+    background:url('../images/dialogbox_desc_icon.png') 0 0 no-repeat;
+    width: 10px;
+    height: 10px;
+    padding: 0px 4px;
+}
+#collectionHierarchy div.hierarchyDesc {
+    display: none;
+    margin-top: 10px;
+    border-top: 1px dotted #333;
+    border-bottom: 1px dotted #333;
+    background: url('../images/transcription_content_bg.png') top repeat-x #e7e7e7;
+    padding: 5%;
+    width: 90%;
+}
+#collectionHierarchy span.timecode {
+    color: #3d3d3d;
+    font-weight: normal;
+    font-size: 80%;
+}
+#collectionHierarchy div.collectionLabel {
+    font-weight: bold;
+    color: #b69945;
+    font-size: 115%;
+}
+#collectionHierarchy div.eventLabel {
+    font-weight: bold;
+    color: #b66a42;
+    font-size: 115%;
+}
+#collectionHierarchy div.sceneLabel {
+    font-weight: bold;
+    color: #8b9530;
+    font-size: 115%;
+}
+#collectionHierarchy div.actionLabel {
+    font-weight: bold;
+    color: #4657c3;
+    font-size: 115%;
+}
+#collectionHierarchy div.collection {
+    margin-left: 5px;
+}
+#collectionHierarchy div.event {
+    margin-left: 30px;
+    margin-top: -12px;
+}
+#collectionHierarchy div.scene {
+    margin-left: 30px;
+    margin-top: -12px;
+}
+#collectionHierarchy div.action {
+    margin-left: 30px;
+    margin-top: -12px;
+}

@@ -1,0 +1,234 @@
+/* Element Defaults & Globals */
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 75%;
+    font-family: verdana, arial, sans-serif;
+    color: #333;
+    min-width: 1000px;
+}
+input, textarea {
+    font-family: verdana, arial, sans-serif;
+    font-size: 75%;
+}
+.clear {
+    clear: both;
+}
+.floatRight {
+    float: right;
+}
+.floatLeft {
+    float: left;
+}
+.noScript {
+    color: crimson;
+    position: relative;
+    top: 2%;
+    left: 2%;
+}
+#main {
+    padding: 1%;
+}
+#wrapper {
+    margin: 0% 5%;
+}
+.col21Smaller {
+    float: left;
+    width: 35%;
+}
+.col21Larger {
+    float: left;
+    width: 65%;
+}
+.col22Smaller {
+    float: right;
+    width: 35%;
+}
+.col22Larger {
+    float: right;
+    width: 65%;
+}
+.col31 {
+    float: left;
+    width: 25%;
+}
+.col32 {
+    float: left;
+    width: 50%;
+}
+.col33 {
+    float: left;
+    width: 25%;
+}
+textarea#desc_in {
+    width: 100%;
+    height: 55%;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background: solid #000000;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+textarea#head_in {
+    width: 100%;
+    height: 10%;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background: solid #000000;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+/* Header Styles */
+#banner {
+    padding-top: 5px;
+    width: 100%;
+    display:block;
+    text-align: center;
+}
+/* Navigation Positioning et al */
+#navigationBar {
+    margin-top: 18px;
+}
+.navCurrentItem {
+    margin-top: -14px;
+}
+.navTopItem {
+    padding: 0px 10px;
+    font-weight: lighter;
+}
+.navCurrentLeftBorder {
+    background:url('../images/nav_tab_left.png') no-repeat;
+    height: 36px;
+    width: 22px;
+    float: left;
+}
+.navCurrentRightBorder {
+    background:url('../images/nav_tab_right.png') no-repeat;
+    height: 36px;
+    width: 22px;
+    float: left;
+}
+.navCurrentCommon {
+    background:url('../images/nav_tab_common.png') repeat-x;
+    height: 36px;
+    float: left;
+}
+.navCurrentText {
+    color: white;
+    position: relative;
+    top: 14px;
+    font-weight: lighter;
+}
+div.separator {
+    border-left: 2px dotted #666;
+    height: 18px;
+    width: 3px;
+}
+/* Navigation Bar Search */
+#navigationSearchBox {
+    float:left;
+    width: 10%;
+}
+#navigationSearchWrapper {
+    width: 225px;
+    margin:0 auto;
+}
+#navigationSearchBar {
+    background: url('../images/search_box_bg.png') no-repeat 50% 0%;
+    height: 41px;
+    width: 174px;
+    float:left;
+}
+#navigationSearchButton {
+    background: none;
+    width: 45px;
+    height: 42px;
+    cursor: pointer;
+}
+#navigationSearchButton:hover {
+    background: url('../images/search_button_hover.png') no-repeat 0 0;
+}
+#navigationSearchButtonWrapper {
+    background: url('../images/search_button_normal.png') no-repeat 0 0;
+    width: 45px;
+    height: 42px;
+    cursor: pointer;
+    float: left;
+    position: relative;
+    top: -2px;
+}
+#searchBoxInput {
+    border: none;
+    background: none;
+    font-weight: bold;
+    width: 160px;
+}
+/* Navigation Link Styles */
+.navTopItem a:link {
+    text-decoration: none;
+    color: #333;
+}
+.navTopItem a:visited {
+    text-decoration: none;
+    color: #333;
+}
+.navTopItem a:active {
+    text-decoration: none;
+    color: #333;
+}
+.navTopItem a:hover {
+    text-decoration: underline;
+}
+.navCurrentItem a:link {
+    text-decoration: none;
+    color: white;
+}
+.navCurrentItem a:visited {
+    text-decoration: none;
+    color: white;
+}
+.navCurrentItem a:active {
+    text-decoration: none;
+    color: white;
+}
+.navCurrentItem a:hover {
+    text-decoration: underline;
+}
+/* User Logged in Style */
+div.loggedInUser {
+    float: right;
+    padding-right: -10px;
+    margin-top: -20px;
+}
+.trans {
+	position: relative;
+	width: 90%;
+	left: 5%;
+}
+.trans .transleft { /* used on Individual pages only */
+      float: left;
+		width: 45%;
+  }
+.trans .transright { /* used on Individual pages only */
+     float: right;
+	width: 45%;
+ }
+.trans .transheadleft { /* used on Individual pages only */
+      float: left;
+		width: 45%;
+  }
+.trans .transheadright { /* used on Individual pages only */
+     float: right;
+	width: 45%;
+ }
+
+
+li.Scene {
+ margin-left:10px;
+}
+li.Action {
+ margin-left:20px;
+}
+}

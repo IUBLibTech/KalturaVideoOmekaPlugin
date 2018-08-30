@@ -1,0 +1,175 @@
+a:hover {
+ cursor:pointer;
+}
+#vid_player
+{
+	position:relative;
+	width: 100%;
+}
+#vidcontrols
+{
+	position:relative;
+	max-width: 660px;
+	margin: -3.5em auto 3.3em;
+	display: block; 
+	opacity: .7;
+}
+
+ul.vidControlsLayout
+{
+	list-style:none;
+	position: relative;
+	margin: auto;
+	background-color: black;
+	overflow: hidden;
+	opacity: 1;
+}
+
+li#start_img 
+{
+	float:left; 
+}
+
+li#stop_img
+{
+	float:left; 
+}
+
+li#vol_img
+{
+	float:left;
+	padding-left:.5em;
+	padding-right: .5em;
+	padding-top: .3em;
+}
+
+li#playback-display
+{
+	float:left;
+	font-size: 14px;
+	padding-left:.5em; 
+	padding-right:1em;
+
+	color:white;
+	
+}
+
+li#slider-display
+{
+	float:left;
+	font-size: 14px;
+	padding-left:.5em;
+	color:white;
+	
+}
+
+li.progressBar
+{
+	float:left;
+	position:relative;
+	width:30%;
+	margin: .5em auto;
+}
+
+li.volumeBar
+{
+	float:left;
+	position:relative;
+	width: 10%;
+	margin: .5em auto;
+	margin-left: .7em;
+}
+
+ul.volumeControls 
+{
+margin: 1em;
+}
+ul.volumeControls li
+{
+margin-top: 2.3em;
+}
+ul.volumeControls li#vol_img
+{
+margin-right: 1.5em;
+margin-top: 2em;
+}
+
+
+	.timeBar
+	{
+	   position: absolute;
+	   top: 0;
+	   left: 0;
+	   width: 0;
+	   height: 100%;
+	   background-color: #aaa;
+	}
+	.sweep
+	{
+	   position: absolute;
+	   top: 0;
+	   left: 0;
+	   width: .5em;
+	   height: 2em;
+	   margin-top: -.7em;
+	   background-color: red;
+	}
+
+	.volume
+	{
+	   position: absolute;
+	   top: 0;
+	   left: 0;
+	   width: 1;
+	   height: 100%;
+	   background-color: #ccc;
+	}
+	.volsweep
+	{
+	   position: absolute;
+	   top: 0;
+	   left: 0;
+	   width: .5em;
+	   height: 2em;
+	   margin-top: -.7em;
+	   background-color: red;
+	}
+#jwplayer_plugin
+{
+width: 100%;
+height: 100%;
+}
+.vjs-default-skin.vjs-paused .vjs-big-play-button 
+{
+display: none;
+}
+/*Sets the visual listbar width to 400 px and realigns it above the icon. */
+ .jw-skin-seven .jw-overlay .jw-playlist-container {
+ 	width:400px;
+ 	left:-20%;
+ }
+
+/* overrides the player settings for how tall the visualplaylist can be. 195px is the about right for a player that is 270px tall, including the controlbar height, and menus. */
+.jwplayer .jw-playlist {
+min-height: none;
+max-height: none;
+height: 195px;
+
+ }
+
+/* Makes it so the list items are left aligned in the visualplaylist */
+ .jwplayer .jw-playlist .jw-option {
+	padding: 0 15px;
+	margin: auto;
+	text-align: left;
+}
+
+.borderClass{
+  border-color: #C1E0FF;
+  border-width:1px;
+  border-style: solid;
+  /** OR USE INLINE
+  border: 1px solid #C1E0FF;
+  **/
+}
+

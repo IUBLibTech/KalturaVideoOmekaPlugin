@@ -1,0 +1,167 @@
+/* Display Segment Layout */
+div.displaySegmentLeftColumn { float: left; width: 75%; }
+div.displaySegmentRightColumn { float: right; width : 22%; } 
+
+/****************************/
+/*	Visual Timeline Styles  */
+/****************************/
+#timelineWrapper { position: relative; width: 100%; overflow: auto; float: left; font-size: 70%; }
+#timelineWrapper table {font-size: 110%;}
+#dialogBox { font-size: 70%; }
+#timeline { width: 100%; height: 72px; background: url('../images/timeline_bg.jpg') repeat-x; min-width: 450px; position: relative; }
+
+/* Timeline Vertical Zoom */
+#zoom { height: 125px; background: url('../images/timeline_bg.jpg') repeat-x; width: 10%; border: 1px solid grey; float: left; margin-left: 1px;}
+#zoomPath { display: block; background: url('../images/zoom_path.png') no-repeat center; height: 45px; width: 30px; margin: 0 auto;}
+#zoomOut { display : block; background: url('../images/zoom_out.png') no-repeat; width: 28px; height: 27px; margin: 3px auto 0 auto; }
+#zoomIn { display: block; background: url('../images/zoom_in.png') no-repeat; width: 28px; height: 27px; margin: 2px auto 0 auto; }
+#zoomSweep { display: block; background: url('../images/zoom_sweep.png') no-repeat; width: 50px; height: 20px; cursor: 'move'; margin-left: -10px; }  
+
+/* Reset Timeline */
+#resetTimeline { height: 20px; width: 100%; text-align:center; margin-top: 2px; margin-bottom: 1px; background-color: #a71818; }
+#resetTimeline a { color: white; text-decoration: none; }
+#resetTimeline a:hover { color: white; text-decoration : underline; }
+#resetTimeline a:visited { color: white; text-decoration : none; }
+
+/* Timeline Status Box */
+div.statusBox { position: absolute; text-align: center; }
+div.statusBox div.statusBoxTop { width: 167px; height: 11px; background: url('../images/status_bg_top.png') no-repeat; display: block; }
+div.statusBox div.statusBoxBottom { width: 167px; height: 12px; background: url('../images/status_bg_bottom.png') no-repeat; display: block; }
+div.statusBox div.statusBoxRepeat { background: url('../images/status_bg_repeat.png') repeat-y; width: 167px; }
+div.statusBox div.statusBoxText { width: 150px; position: relative; left: 8px; }
+
+/* Timeline Tab Universals */
+div.timelineTabText { height: 22px; overflow: hidden; color: #fff; white-space: nowrap; }
+div.timelineTabText div.metadata { display: none; }
+div.timelineTextPosition { position: relative; top: 8px; }
+div.timelineTextPosition a { color: white; text-decoration: none; }
+
+/* Timeline Segment Tabs */
+div.collectionTab { background: url('../images/collection_tab_bg.png') repeat-x; height: 72px; border-right: 1px solid #B59845; border-left: 1px solid #B59845; }
+div.eventTab { background: url('../images/event_tab_bg.png') repeat-x; height: 50px; border-right: 1px solid #A25E3B; border-left: 1px solid #A25E3B;}
+div.sceneTab { background: url('../images/scene_tab_bg.png') repeat-x; height: 30px; border-right: 1px solid #8B9433; border-left: 1px solid #8B9433;}
+div.actionTab { background: url('../images/action_tab_bg.png') repeat-x; height: 25px; border-right: 1px solid #4E60CE; border-left: 1px solid #4E60CE;}
+div.transcriptionTab { position: relative; top: 14px; height: 13px; background-color: black; color: white; opacity: 0.7; -moz-opacity: 0.7; white-space: nowrap;}
+div.timelineTranscriptionLabel { text-align: center; }
+
+/* Timeframe */
+#timeFrame { position: relative; top: 75px; height: 30px; width: 100%; background: url('../images/timeframe_bg.png') repeat-x; }
+
+/* Timeline Dialog Box Top */
+span.dialogBoxZoomIcon { background:url('../images/dialogbox_zoom_icon.png') 0 0 no-repeat; width: 10px; height: 10px; margin-left: 2px; margin-top: 1px; padding: 0px 5px;}
+span.dialogBoxPlayIcon { background:url('../images/dialogbox_play_icon.png') 0 0 no-repeat; width: 10px; height: 10px; margin-left: 2px; margin-top: 1px; padding: 0px 7px;}
+div.closeButtonContainer { float: right; width: 16px; height: 17px; }
+div.closeButtonContainer span.closeButton { float:right; background: url('../images/dialogbox_closebutton.png') no-repeat; width: 16px; height: 17px; }
+div.dialogBoxTop { position: absolute; background: url('../images/dialogbox_top.png') no-repeat; height: 155px; width: 246px; z-index: 100;}
+div.dialogBoxTop div.dialogBoxHeader { overflow: hidden; margin: 10px 10px 0px 10px; height: 20px; font-weight: bold;}
+div.dialogBoxTop div.dialogBoxTextContent { margin: 0px 10px 0px 10px; height: 80px; }
+div.dialogBoxTop div.dialogBoxTextContent span.contentDescriptors { color: grey; font-weight: bold; } 
+div.dialogBoxTop div.dialogBoxTextFooter { overflow: hidden; margin: 0px 10px; text-align: center; padding-top: 2px; }
+div.dialogBoxTop div.dialogBoxTextFooter span.link { color: #00E; }
+div.dialogBoxTop div.dialogBoxTextFooter span.link:hover { text-decoration: underline; }
+div.dialogBoxTop div.dialogBoxTextFooter a.dialogBoxLink:link { color: #00E; text-decoration: none; }
+div.dialogBoxTop div.dialogBoxTextFooter a.dialogBoxLink:visited { color: #00E; text-decoration: none; }
+div.dialogBoxTop div.dialogBoxTextFooter a.dialogBoxLink:hover { text-decoration: underline; }
+
+/* Timeline Dialog Box Right */
+div.dialogBoxRight { position : absolute; background: url('../images/dialogbox_right.png') no-repeat; height: 140px; width: 265px; z:index: 100;}
+div.dialogBoxRight div.dialogBoxHeader { overflow: hidden; margin: 10px 7px 0px 28px; height: 20px; font-weight: bold;}
+div.dialogBoxRight div.dialogBoxTextContent { margin: 0px 7px 0px 28px; height: 80px; }
+div.dialogBoxRight div.dialogBoxTextContent span.contentDescriptors { color: grey; font-weight: bold; }
+div.dialogBoxRight div.dialogBoxTextFooter { overflow: hidden; margin: 0px 7px 0px 28px; text-align: center; padding-top: 2px; }
+div.dialogBoxRight div.dialogBoxTextFooter span.link { color: #00E; }
+div.dialogBoxRight div.dialogBoxTextFooter span.link:hover { text-decoration: underline; cursor: pointer; }
+div.dialogBoxRight div.dialogBoxTextFooter a.dialogBoxLink:link { color: #00E; text-decoration: none; }
+div.dialogBoxRight div.dialogBoxTextFooter a.dialogBoxLink:visited { color: #00E; text-decoration: none; }
+div.dialogBoxRight div.dialogBoxTextFooter a.dialogBoxLink:hover { text-decoration: underline; }
+
+/* Timeline Tab Specific Header Styles */
+.dialogBoxCollectionHeader { color: #B59845; border-bottom: 1px solid #B59845; font-size: 13px;}
+.dialogBoxEventHeader { color: #A25E3B; border-bottom: 1px solid #A25E3B; font-size: 13px;}
+.dialogBoxSceneHeader { color: #8B9433; border-bottom: 1px solid #8B9433; font-size: 13px;}
+.dialogBoxActionHeader {color: #4E60CE;  border-bottom: 1px solid #4E60CE; font-size: 13px;}
+
+/* Timeline Tab Specific Footer Styles */
+.dialogBoxCollectionFooter { border-top: 1px solid #B59845; }
+.dialogBoxEventFooter { border-top: 1px solid #A25E3B; }
+.dialogBoxSceneFooter { border-top: 1px solid #8B9433; }
+.dialogBoxActionFooter { border-top: 1px solid #4E60CE; }
+
+/* Timeline Sweep */
+#playbackZone { position: absolute; height: 25px; z-index: 1; border: 1px solid red; position: absolute; top: 97px; background-color: #93001e; overflow: hidden; display: none; white-space: nowrap;}
+#playbackZoneText { color: white; font-weight: bold; text-align: center; }
+#timelineSweep  { background: url('../images/timeline_sweep.png') no-repeat; width: 20px; height: 72px; cursor: move; z-index: 20; position: absolute; display: none; }
+/****************************/
+/*	Video Player Styles  	*/
+/****************************/
+#playerPane { width: 480px; height: 336px; margin: 0 auto;}
+#videoSegmentTitle { width : 100%; }
+
+/*****************************/
+/*    Technical Problems     */
+/*****************************/
+.dialogBoxTechnicalProblemHeader { color: #9B0000; border-bottom: 1px solid #9B0000; font-size: 13px;}
+.dialogBoxTechnicalProblemFooter { border-top: 1px solid #9B0000; }
+#technicalProblemsIcon { float: right; position: relative; top: -2px; visibility: hidden; height: 20px; width: 20px; background: url('../images/exclaim.png') 0px 0px no-repeat; } 
+div.technicalProblem { display : none; }
+
+/*****************************/
+/*	Transcription Styles 	 */
+/*****************************/
+#transcription { height: 120px; width : 100%; min-width: 400px; background-color: #e7e7e7; border: 1px solid #676767; border-left: none; border-right: none; overflow: auto; }
+#transcription div.transcriptionSection h3 { height: 15px; font-size: 85%; background: url('../images/expand_icon.png') 2px 5px no-repeat white; border-bottom: 1px solid #676767; padding: 5px; padding-left: 20px; margin: 0px; color: #014b4c; }
+#transcription div.transcriptionContent { height: 94px; background: url('../images/transcription_content_bg.png') top repeat-x #e7e7e7; display: none; }
+#transcription div.spokenLanguage { font-size: 85%; width: 50%; height: 100%; float: left; border-right: 1px dotted black; }
+#transcription div.translationLanguage { font-size: 85%; width : 49%; height: 100%; float: right; }
+#transcription div.languageHeader { margin-left: 5px; color: black; font-size: 100%; font-weight: bold; height : 30px; display: block; text-align:center; }
+#transcription div.spokenLanguageContent, div.translationLanguageContent { height: 64px; overflow: auto; display: none; }
+#transcription select.chooseTranslation { font-size : 85%; }
+#transcription span.transcriptionTimecode { float:right; font-size: 90%; color: #6d0000; margin-top: 2px; }
+
+/*****************************/
+/*	   Reference Styles		 */
+/*****************************/
+#glossarySection { display : none; }
+a.seeAllGlossaries { color: #006119; text-decoration: none; background: url('../images/linkext.gif') top right no-repeat; padding-right: 10px;}
+a.seeAllGlossaries:hover { text-decoration: underline; background: url('../images/linkext.gif') top right no-repeat; padding-right: 10px; }
+
+span.GLOSSARY_REFERENCE { color: #006119; }
+span.SEGMENT_REFERENCE { color: #0000ee; }
+span.CITATION_REFERENCE { color: #d05c00; }
+
+/* Reference Style Inside the Dialog Box */
+.dialogBoxGlossaryReferenceHeader { color : #006119; border-bottom: 1px solid #006119; font-size: 13px;}
+.dialogBoxGlossaryReferenceFooter { border-top: 1px solid #006119; }
+div.dialogBoxTextContent span.GLOSSARY_REFERENCE { background: url('../images/linkext.gif') top right no-repeat; padding-right: 10px; }
+div.dialogBoxTextFooter span.GLOSSARY_REFERENCE { background: url('../images/linkext.gif') top right no-repeat; padding-right: 10px; }
+div.dialogBoxTextContent span.SEGMENT_REFERENCE { background: url('../images/linkext.gif') top right no-repeat; padding-right: 10px; }
+/* Citation Styles */
+#citationsSection { position: relative; top: 10px; display: none; }
+#citationsSection h1 { position: relative; top: -10px; }
+#citations { position : relative; top : -10px; }
+span.allReferences { float : right; padding-right: 10px; font-size : 80%; margin-top: 3px; }
+span.allReferences a { color: #452108; text-decoration: none; background: url('../images/linkext.gif') top right no-repeat; padding-right: 10px; }
+span.allReferences a:hover { text-decoration: underline; background: url('../images/linkext.gif') top right no-repeat; padding-right: 10px; }
+#citationsRepository { display : none; }
+
+/**********************************************/
+/* Browser Incompatibility Message Box Styles */
+/**********************************************/
+#errMsgHeader span a { color: white; text-decoration: none; }
+#errMsgHeader span a:hover { color: white; text-decoration: underline; }
+#errMsgBody a { text-decoration: none; color: #00E; }
+#errMsgBody a:hover { text-decoration: underline; color: #00E; }
+
+/**********************************************/
+/* 			Display Segment Search Box		  */
+/**********************************************/
+div.displaySegmentSearchBox { position: relative; top: 0px; overflow: hidden; height: 17px; }
+input.searchInput { height: 13px; border: 1px solid #575757; width: 150px; position: relative; top: -4px; margin-bottom: 0px;}
+
+/**********************************************/ 
+/* 			Display Segment Error Messages 	  */
+/**********************************************/
+p.errorMessage:first-letter { font-size: 200%; font-weight: bold; color: #b70000; }
+ul.errorMessages a:link, a:visited, a:active  { text-decoration: none; color: #00E; }
+ul.errorMessages a:hover  { text-decoration: underline; color: #00E; }
+ul.errorMessages { padding: 0px 15px; list-style-type: square; }

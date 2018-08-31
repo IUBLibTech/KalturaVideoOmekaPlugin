@@ -1,7 +1,7 @@
 # KalturaVideo
 <p>KalturaVideo is an Omeka plugin that allows you to stream video from either Kaltura Mediaspace or Youtube. In an item in Omeka, this video stream can have start and end points set in it allowing you to divide the stream into segments. Since each item in Omeka can contain a video segment, you can describe that segment using all the metadata fields available in Omeka for an item such as Description, Creator, Date, etc. </p>
 <p>When you install KalturaVideo, it adds a tab, Kaltura Video, to the Edit Item screen. This tab has fields for</p>
-<pre><code>Video File ID - Actual file ID from Kaltura Mediaspace
+<pre><code><h5>Video File ID</h5> - Actual file ID from Kaltura Mediaspace
 Video UI Conf - Actual ID for the Kaltura Mediaspace instance
 Partner ID - The ID for the organization as set up for Kaltura Mediaspace</code></pre>
 <p>These fields can all be seen in Kaltura when you go to a video. 

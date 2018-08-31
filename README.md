@@ -18,7 +18,7 @@ in hh:mm:ss format or as number of seconds from the beginning of the file.
 Segment End - the end point in the video stream either in hh:mm:ss format 
 or as number of seconds from the beginning of the file. 
 Must be greater than Segment Start value.
-<Segment Type - Use segment type to help determine how segment 
+Segment Type - Use segment type to help determine how segment 
 is to be displayed in a hierarchy. For instance, an event may 
 encompass many scenes, a scene may encompass many actions. Currently, 
 the plugin only support 3 levels of hierarchy, event->scene->action.

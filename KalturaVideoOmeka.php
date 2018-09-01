@@ -38,7 +38,7 @@ class KalturaVideoOmekaPlugin extends Omeka_Plugin_AbstractPlugin
 
     public function setUp()
     {
-        add_shortcode('kalplayer', array('KalturaVideoPlugin', 'kalplayer'));
+        add_shortcode('kalplayer', array('KalturaVideoOmekaPlugin', 'kalplayer'));
         parent::setUp();
     }
     
@@ -48,13 +48,13 @@ class KalturaVideoOmekaPlugin extends Omeka_Plugin_AbstractPlugin
 	}
 	public function hookInstall()
     {
-	    set_option('kaltura_width_public', KalturaVideoPlugin::DEFAULT_VIEWER_WIDTH);
-        set_option('kaltura_height_public', KalturaVideoPlugin::DEFAULT_VIEWER_HEIGHT);
-        set_option('kaltura_external_control', KalturaVideoPlugin::DEFAULT_VIEWER_CONTROL);
-        set_option('kaltura_display_current', KalturaVideoPlugin::DEFAULT_VIEWER_DISPLAY);
-        set_option('kaltura_autostart', KalturaVideoPlugin::DEFAULT_VIEWER_AUTOSTART);
-		set_option('kaltura_uiconf', KalturaVideoPlugin::DEFAULT_VIEWER_UICONF);
-		set_option('kaltura_partner', KalturaVideoPlugin::DEFAULT_VIEWER_PARTNER);
+	    set_option('kaltura_width_public', KalturaVideoOmekaPlugin::DEFAULT_VIEWER_WIDTH);
+        set_option('kaltura_height_public', KalturaVideoOmekaPlugin::DEFAULT_VIEWER_HEIGHT);
+        set_option('kaltura_external_control', KalturaVideoOmekaPlugin::DEFAULT_VIEWER_CONTROL);
+        set_option('kaltura_display_current', KalturaVideoOmekaPlugin::DEFAULT_VIEWER_DISPLAY);
+        set_option('kaltura_autostart', KalturaVideoOmekaPlugin::DEFAULT_VIEWER_AUTOSTART);
+		set_option('kaltura_uiconf', KalturaVideoOmekaPlugin::DEFAULT_VIEWER_UICONF);
+		set_option('kaltura_partner', KalturaVideoOmekaPlugin::DEFAULT_VIEWER_PARTNER);
 
 	    $db = get_db();
 		//if (!$db->query("Select name from {$db->prefix}plugins where name = 'VideoStream'")) {

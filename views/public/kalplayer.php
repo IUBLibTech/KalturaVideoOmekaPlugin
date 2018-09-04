@@ -195,12 +195,15 @@ videojs("video<?php echo $id_suffix;?>").on("timeupdate",checkTime<?php echo $id
 
 <!-- Javascript setup and controlling Sidebar for Kaltura -->
 <?php if (metadata('item', array('Kaltura Video','Video Source')) == 'Kaltura'){?>
-<script src="https://cdnapisec.kaltura.com/p/<?php echo metadata('item', array('Kaltura Video','Partner ID'));?>/sp/<?php echo metadata('item', array('Kaltura Video','Partner ID'));?>00/embedIframeJs/uiconf_id/<?php echo metadata('item', array('Kaltura Video','Video UI Conf'));?>/partner_id/<?php echo metadata('item', array('Kaltura Video','Partner ID'));?>"></script>
+$partner = empty(metadata('item', array('Kaltura Video','Partner ID'))) ? get_option('kaltura_partner') : metadata('item', array('Kaltura Video','Partner ID'));
+$uiconf = empty(metadata('item', array('Kaltura Video','Video UI Conf'))) ? get_option('kaltura_uiconf') : metadata('item', array('Kaltura Video','Video UI Conf')); 
+?>
+<script src="https://cdnapisec.kaltura.com/p/<?php echo $partner;?>/sp/<?php echo $partner;?>00/embedIframeJs/uiconf_id/<?php echo $uiconf;?>/partner_id/<?php echo $partner;?>"></script>
 <script>
   kWidget.embed({
  	'targetId': 'vid_player-<?php echo $id_suffix;?>',
- 	'wid': '_<?php echo metadata('item', array('Kaltura Video','Partner ID'));?>',
-	'uiconf_id' : '<?php echo metadata('item', array('Kaltura Video','Video UI Conf'));?>',
+ 	'wid': '_<?php echo $partner;?>',
+	'uiconf_id' : '<?php echo $uiconf;?>',
 	'entry_id' : '<?php echo metadata('item', array('Kaltura Video','Video File ID'));?>',
 	'flashvars':{ 		'controlBarContainer': {
         	'plugin': true,
@@ -208,6 +211,7 @@ videojs("video<?php echo $id_suffix;?>").on("timeupdate",checkTime<?php echo $id
    	 		},    
 			'autoPlay': false,
 	},// flashvars allows you to set runtime uiVar configuration overrides. 
+
 
 	readyCallback: function( playerId ){
 		var kdp = document.getElementById( playerId );

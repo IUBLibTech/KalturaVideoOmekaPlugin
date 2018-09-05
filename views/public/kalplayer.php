@@ -194,7 +194,7 @@ videojs("video<?php echo $id_suffix;?>").on("timeupdate",checkTime<?php echo $id
 
 
 <!-- Javascript setup and controlling Sidebar for Kaltura -->
-<?php if (metadata('item', array('Kaltura Video','Video Source')) == 'Kaltura'){?>
+<?php if (metadata('item', array('Kaltura Video','Video Source')) == 'Kaltura'){
 $partner = empty(metadata('item', array('Kaltura Video','Partner ID'))) ? get_option('kaltura_partner') : metadata('item', array('Kaltura Video','Partner ID'));
 $uiconf = empty(metadata('item', array('Kaltura Video','Video UI Conf'))) ? get_option('kaltura_uiconf') : metadata('item', array('Kaltura Video','Video UI Conf')); 
 ?>

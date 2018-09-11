@@ -1,6 +1,6 @@
 # KalturaVideo Omeka Plugin
 <h4>Installation</h4>
-<p>After unzipping the file, rename the directory to <b>KalturaVideo</b> and then transfer to your plugins directory in your Omeka installation.</p>
+<p>Download the zip file from the most recent release. After unzipping the file, make sure the directory is named <b>KalturaVideo</b> and then transfer this directory to your plugins directory in your Omeka installation.</p>
 <h4>Documentation</h4>
 <p>KalturaVideo is an Omeka plugin that allows you to stream video from either Kaltura Mediaspace or Youtube. In an item in Omeka, this video stream can have start and end points set in it allowing you to divide the stream into segments. Since each item in Omeka can contain a video segment, you can describe that segment using all the metadata fields available in Omeka for an item such as Description, Creator, Date, etc. </p>
 <p>When you install KalturaVideo, it adds a tab, Kaltura Video, to the Edit Item screen. This tab has fields for</p>
